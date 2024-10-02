@@ -1,0 +1,26 @@
+/* Cart.css */
+.container {
+  margin-top: 20px;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.img-thumbnail {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.btn-primary:hover {
+  background-color: #0056b3; /* لون مخصص عند التحويم */
+  border-color: #0056b3;
+}
+
+.btn-primary:disabled {
+  background-color: #e0e0e0; /* لون الأزرار المعطلة */
+  border-color: #e0e0e0;
+  color: #6c757d; /* لون النص المعطل */
+}
+.btn-group-lg>.btn, .btn-lg {
+    --bs-btn-padding-y: -3.5rem;
+}
