@@ -32,7 +32,6 @@ const Products = () => {
 
     fetchProducts();
 
-    // استرجاع حالة السلة عند تحميل الصفحة
     const storedCart = JSON.parse(Cookies.get('cart') || '[]');
     setCartProducts(storedCart);
   }, [token]);
@@ -70,11 +69,11 @@ const Products = () => {
                         addToCart(product);
                       }
                     }}
-                    disabled={isInCart} // Disable button if product is in cart
+                    disabled={isInCart}
                   >
                     {isInCart ? 'Added to Cart' : 'Add to Cart'}
                   </button>
-                  {isInCart && <span className="text-success ms-2">&#10003;</span>} {/* أيقونة تدل على أن المنتج تم إضافته */}
+                  {isInCart && <span className="text-success ms-2">&#10003;</span>} {}
                 </div>
               </div>
             </div>

@@ -20,17 +20,16 @@ nav a {
   font-size: 1.2rem;
 }
 
-/* Header.css */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* تأكد من أن الهيدر يظهر فوق المحتويات الأخرى */
+  z-index: 1000;
 }
 
 body {
-  padding-top: 60px; /* إضافة حشوة في الأعلى لمراعاة ارتفاع الهيدر */
+  padding-top: 60px;
 }
 
 

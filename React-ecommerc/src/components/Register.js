@@ -1,8 +1,7 @@
-// Register.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
-import './Register.css'; // قم بإنشاء ملف CSS لتصميم الصفحة
+import './Register.css';
 
 const Register = () => {
   const [username, setUsername] = useState('');
@@ -12,10 +11,8 @@ const Register = () => {
 
   const handleRegister = () => {
     if (username && password && password === confirmPassword) {
-      // هنا يمكنك إضافة عملية التسجيل، مثل الاتصال بـ API
-      // بعد نجاح التسجيل، يمكنك تخزين معلومات الجلسة
       Cookies.set('sessionToken', 'your-session-token', { expires: 7 });
-      navigate('/'); // توجيه المستخدم إلى الصفحة الرئيسية
+      navigate('/');
     } else {
       alert('Please enter valid credentials and ensure passwords match.');
     }

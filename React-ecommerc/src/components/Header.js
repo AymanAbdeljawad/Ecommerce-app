@@ -1,4 +1,3 @@
-// Header.js
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import Cookies from 'js-cookie';
