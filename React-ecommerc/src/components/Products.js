@@ -21,7 +21,7 @@ const Products = () => {
         if (Array.isArray(productData)) {
           setProducts(productData);
         } else {
-          throw new Error('البيانات المسترجعة ليست مصفوفة');
+            throw new Error('The retrieved data is not an array');
         }
       } catch (err) {
         setError(err.message);
